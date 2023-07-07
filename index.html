@@ -14,8 +14,45 @@
 		<heading class="heading">
 			<center style="background-color: powderblue;">
 				<h1>Pokemon EV Calculator</h1>
-				<h2 id="subTitle">Home</h2>
 			</center>
 		</heading>
+		<div class="container-fluid" id="inputArea">
+			<form name="EVdesires">
+				<div class="row">
+					<div class="col-xs-12" align="center">
+						Please input the values you wish for your Pokemon's EV's.
+						<p>Please note, Pokémon can gain 510 EVs total, with a max of 252 per stat
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12" align="center">
+						<div class="inputSection">
+							<label for="HP">HP: </label>
+							<input type="number" name="textInput" id="HP" min="0" max="252" required><br>
+							<label for="Attack">Attack: </label>
+							<input type="text" name="textInput" id="Attack" min="0" max="252" required><br>
+							<label for="Defense">Defense: </label>
+							<input type="text" name="textInput" id="Defense" min="0" max="252" required><br>
+							<label for="SpAttack">Special Attack: </label>
+							<input type="text" name="SpAttack" id="SpAttack" min="0" max="252" required><br>
+							<label for="SpDef">Special Defense: </label>
+							<input type="text" name="textInput" id="SpDef" min="0" max="252" required><br>
+							<label for="Speed">Speed: </label>
+							<input type="text" name="textInput" id="Speed" min="0" max="252" required><br>
+							<input type="submit">
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col-xs-12" align="center">
+					<h2>You will need:</h2><br>
+					<span id="HPVit"></span> HP Ups<br>
+					<span id="AttVit"></span> Protein<br>
+					<span id="DefVit"></span> Iron<br>
+					<span id="SpAttVit"></span> Calcuim<br>
+					<span id="SPDefVit"></span> Zinc<br>
+					<span id="SpeeVit"></span> Carbos<br>
+				</div>s
+			</div>
+		</div>
 	</body>
 </html>

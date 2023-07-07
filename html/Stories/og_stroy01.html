@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<!--Bootstrap Setup-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--Customs-->
+		<link rel="stylesheet" href="../../css/stylesheet.css">
+		<link rel="stylesheet" href="../../css/storyinputcss.css">
+		
+		<title>Sonic Mad Libs: Gotta Go Fast</title>
+	</head>
+
+	<body>
+		<heading class="heading">
+			<center style="background-color: powderblue;">
+				<img src="../../img/Sonicico.png" class="headImage">
+				<h1>Sonic the Hedgehog: Mad Libs</h1>
+				<h2 id="subTitle">Gotta Go Fast</h2>
+			</center>
+		</heading>
+
+		<div class="container-fluid" id="inputArea">
+			<form name="storyInput">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12" align="center">
+						<div class="inputSection">
+							<table>
+								<tr>
+									<td><label for="in01">Animal: </label></td>
+									<td><input type="text" name="textInput"  id="in01" required><br></td>
+								</tr>
+								<tr>
+									<td><label for="in02">Noun: </label></td>
+									<td><input type="text" name="textInput" id="in02" required><br></td>
+								</tr>
+								<tr>
+									<td><label for="in03">Colour: </label></td>
+									<td><input type="text" name="textInput" id="in03" required></td>
+								</tr>
+								<tr>
+									<td><label for="in04">Noun: </label></td>
+									<td><input type="text" name="textInput" id="in04" required></td>
+								</tr>
+								<tr>
+									<td><label for="in05">Number: </label></td>
+									<td><input type="text" name="textInput" id="in05" required></td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12" align="center">
+						<div class="inputSection">
+							<table>
+								<tr>
+									<td><label for="in06">Celebrity: </label></td>
+									<td><input type="text" name="textInput" id="in06" required></td>
+								</tr>
+								<tr>
+									<td><label for="in07">Plural Noun: </label></td>
+									<td><input type="text" name="textInput" id="in07" required></td>
+								</tr>
+								<tr>
+									<td><label for="in08">Verb: </label></td>
+									<td><input type="text" name="textInput" id="in08" required></td>
+								</tr>
+								<tr>
+									<td><label for="in09">Plural Noun: </label></td>
+									<td><input type="text" name="textInput" id="in09" required></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12" align="center">
+						<div class="inputSection">
+							<table>
+								<tr>
+									<td><label for="in10">Adjective: </label></td>
+									<td><input type="text" name="textInput" id="in10" required></td>
+								</tr>
+								<tr>
+									<td><label for="in11">Person in Room: </label></td>
+									<td><input type="text" name="textInput" id="in11" required></td>
+								</tr>
+								<tr>
+									<td><label for="in12">Noun: </label></td>
+									<td><input type="text" name="textInput" id="in12" required></td>
+								</tr>
+								<tr>
+									<td><label for="in13">Adjective: </label></td>
+									<td><input type="text" name="textInput" id="in13" required></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12 col-md-3" align="center">
+						<div class="inputSection" style="max-height: 500px!importaint;">
+							<table>
+								<tr>
+									<td><label for="in14">Type of Food: </label></td>
+									<td><input type="text" name="textInput" id="in14" required></td>
+								</tr>
+								<tr>
+									<td><label for="in15">Adjective: </label></td>
+									<td><input type="text" name="textInput" id="in15" required></td>
+								</tr>
+								<tr>
+									<td><label for="in16">Noun: </label></td>
+									<td><input type="text" name="textInput" id="in16" required></td>
+								</tr>
+								<tr>
+									<td><label for="in17">Part of the Body: </label></td>
+									<td><input type="text" name="textInput" id="in17" required></td>
+								</tr>
+								<tr>
+									<td><label for="in18">Adjective: </label></td>
+									<td><input type="text" name="textInput" id="in18" required></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</form>
+			<center id="playSet" style="padding-top:20px;">
+				<button class="submitButton" id="startBtn">Submit</button>
+			</center>
+		</div>
+		<div class="answer" id="answer" style="display: none;">
+			<span class="paddingSection"></span>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1" align="center"></div>
+					<div class="col-sm-3" align="center">
+						Play back your story
+					</div>
+					<div class="col-sm-6">
+						<button class="playbtns" id=play><i class="fa fa-play"></i></button>
+						<button class="playbtns" id=pause><i class="fa fa-pause"></i></button>
+						<button class="playbtns" id=stop><i class="fa fa-stop"></i></button>
+					</div>
+					
+				</div>
+			</div>
+
+			<span class="paddingSection"></span>
+			<div class="storycomplete">
+				<p>
+					"Sonic the Hedge-<span class="writtenWord" id="val01"></span> is a Sonic <span class="writtenWord" id="val02"></span> with <span class="writtenWord" id="val03"></span> fur. He is the fastest <span class="writtenWord" id="val04"></span> around and can run <span class="writtenWord" id="val05"></span> miles an hour. <span class="writtenWord" id="val06"></span> the Hedgehog also has super-powered <span class="writtenWord" id="val07"></span> and can <span class="writtenWord" id="val08"></span> better than almost anyone else. Sonic is able to harness the power of the Chaos <span class="writtenWord" id="val09"></span>, which are <span class="writtenWord" id="val10"></span>-powered crystals that allow him to transform into Super <span class="writtenWord" id="val11"></span>. Sonic may a/an <span class="writtenWord" id="val12"></span>, but he doesn't just use his <span class="writtenWord" id="val13"></span> abilities for fun, he uses them to defeat his enemies, such as Dr. <span class="writtenWord" id="val14"></span>-man. And he does it all with a/an <span class="writtenWord" id="val15"></span> smile and confident <span class="writtenWord" id="val16"></span> -even though some people think that his <span class="writtenWord" id="val17"></span> is too big. One thing is for certain: Sonic is definitely a/an <span class="writtenWord" id="val18"></span> hero.
+				</p>
+			</div>
+			<center class="paddingSection">
+				<a href="og_long.html" class="submitButton">Play this Story Again</a>
+				<a href="../../index.html" class="submitButton">Return Home</a>
+			</center>
+		</div>
+	<script>
+		var maxInput = 18;	
+	</script>
+	<script type="text/javascript" src="../../js/storyPlay.js"></script>
+</body>
+</html>
