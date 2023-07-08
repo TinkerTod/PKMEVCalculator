@@ -25,12 +25,12 @@ function appendData(){
     var SpDef = document.getElementById('SpDef');
     var Speed = document.getElementById('Speed');
 
-    var HPVit = math.round(HP/Vit);
-    var AttVit = math.round(Attack/Vit);
-    var DefVit = math.round(Defense/Vit);
-    var SpAttVit = math.round(SpAttack/Vit);
-    var SpDefVit = math.round(SpDef/Vit);
-    var SpeeVit = math.round(Speed/Vit);
+    var HPVit = math.round(parseInt(HP)/parseInt(Vit);
+    var AttVit = math.round(parseInt(Attack)/parseInt(Vit);
+    var DefVit = math.round(parseInt(Defense)/parseInt(Vit);
+    var SpAttVit = math.round(parseInt(SpAttack)/parseInt(Vit);
+    var SpDefVit = math.round(parseInt(SpDef)/parseInt(Vit);
+    var SpeeVit = math.round(parseInt(Speed)/parseInt(Vit);
 
 	document.getElementById('HPVit').innerHTML = HPVit;
     document.getElementById('AttVit').innerHTML = AttVit;
