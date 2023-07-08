@@ -23,7 +23,7 @@
 						Please input the values you wish for your Pokemon's EV's.
 						<p>Please note, Pokémon can gain 510 EVs total, with a max of 252 per stat
 					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12" align="center">
+					<div class="col-sm-6 col-xs-12" align="center">
 						<div class="inputSection">
 							<label for="HP">HP: </label>
 							<input type="number" name="textInput" id="HP" min="0" max="252" required><br>
@@ -37,13 +37,12 @@
 							<input type="text" name="textInput" id="SpDef" min="0" max="252" required><br>
 							<label for="Speed">Speed: </label>
 							<input type="text" name="textInput" id="Speed" min="0" max="252" required><br>
-							<input type="submit">
+							<button class="submitButton" id="startBtn">Submit</button>
 						</div>
 					</div>
 				</div>
 			</form>
-			<div class="row">
-				<div class="col-xs-12" align="center">
+				<div class="col-sm-6 col-xs-12" id="Needed" align="center">
 					<h2>You will need:</h2><br>
 					<span id="HPVit"></span> HP Ups<br>
 					<span id="AttVit"></span> Protein<br>
@@ -51,8 +50,9 @@
 					<span id="SpAttVit"></span> Calcuim<br>
 					<span id="SPDefVit"></span> Zinc<br>
 					<span id="SpeeVit"></span> Carbos<br>
-				</div>s
+				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="../../js/Calculation.js"></script>
 	</body>
 </html>

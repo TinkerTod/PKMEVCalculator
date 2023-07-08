@@ -32,12 +32,12 @@ function appendData(){
     var SpDefVit = math.round(SpDef/Vit);
     var SpeeVit = math.round(Speed/Vit);
 
-	document.getElementById('HPVit').innerHTML = HPVit.value;
-    document.getElementById('AttVit').innerHTML = AttVit.value;
-    document.getElementById('DefVit').innerHTML = DefVit.value;
-    document.getElementById('SpAttVit').innerHTML = SpAttVit.value;
-    document.getElementById('SPDefVit').innerHTML = SpDefVit.value;
-    document.getElementById('SpeeVit').innerHTML = SpeeVit.value;
+	document.getElementById('HPVit').innerHTML = HPVit;
+    document.getElementById('AttVit').innerHTML = AttVit;
+    document.getElementById('DefVit').innerHTML = DefVit;
+    document.getElementById('SpAttVit').innerHTML = SpAttVit;
+    document.getElementById('SPDefVit').innerHTML = SpDefVit;
+    document.getElementById('SpeeVit').innerHTML = SpeeVit;
 }
 
 var startBtn = document.getElementById("startBtn");
