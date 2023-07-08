@@ -18,19 +18,19 @@ function checking() {
  * */
 function appendData(){
     var Vit = 10;
-    var HP = document.getElementById('HP');
-    var Attack = document.getElementById('Attack');
-    var Defense = document.getElementById('Defense');
-    var SpAttack = document.getElementById('SpAttack');
-    var SpDef = document.getElementById('SpDef');
-    var Speed = document.getElementById('Speed');
+    var HP = parseInt(document.getElementById('HP').value);
+    var Attack = parseInt(document.getElementById('Attack').value);
+    var Defense = parseInt(document.getElementById('Defense').value);
+    var SpAttack = parseInt(document.getElementById('SpAttack').value);
+    var SpDef = parseInt(document.getElementById('SpDef').value);
+    var Speed = parseInt(document.getElementById('Speed').value);
 
-    var HPVit = math.round(parseInt(HP)/parseInt(Vit);
-    var AttVit = math.round(parseInt(Attack)/parseInt(Vit);
-    var DefVit = math.round(parseInt(Defense)/parseInt(Vit);
-    var SpAttVit = math.round(parseInt(SpAttack)/parseInt(Vit);
-    var SpDefVit = math.round(parseInt(SpDef)/parseInt(Vit);
-    var SpeeVit = math.round(parseInt(Speed)/parseInt(Vit);
+    var HPVit = math.round(HP/parseInt(Vit);
+    var AttVit = math.round(Attack/parseInt(Vit);
+    var DefVit = math.round(Defense/parseInt(Vit);
+    var SpAttVit = math.round(SpAttack/parseInt(Vit);
+    var SpDefVit = math.round(SpDef/parseInt(Vit);
+    var SpeeVit = math.round(Speed/parseInt(Vit);
 
 	document.getElementById('HPVit').innerHTML = HPVit;
     document.getElementById('AttVit').innerHTML = AttVit;
