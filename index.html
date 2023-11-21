@@ -17,8 +17,8 @@
 			</center>
 		</heading>
 		<div class="container-fluid" id="inputArea">
-			<div class="row">
-				<form name="EVdesires">
+			<form name="EVdesires">
+				<div class="row">
 					<div class="col-xs-12" align="center">
 						Please input the values you wish for your Pokemon's EV's.
 						<p>Please note, Pokémon can gain 510 EVs total, with a max of 252 per stat
@@ -52,6 +52,33 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="../../js/Calculation.js"></script>
+		<!-- <script type="text/javascript" src="js/Calculation.js"></script> -->
+		<script type="text/javascript">
+			var startBtn = document.getElementById("startBtn");
+			startBtn.onclick = function(){
+			    var Vit = 10;
+			    var HP = parseInt(document.getElementById('HP').value);
+			    window.alert("HP: "+ HP);
+			    var Attack = parseInt(document.getElementById('Attack').value);
+			    var Defense = parseInt(document.getElementById('Defense').value);
+			    var SpAttack = parseInt(document.getElementById('SpAttack').value);
+			    var SpDef = parseInt(document.getElementById('SpDef').value);
+			    var Speed = parseInt(document.getElementById('Speed').value);
+
+			    var HPVit = math.round(HP/parseInt(Vit);
+			    var AttVit = math.round(Attack/parseInt(Vit);
+			    var DefVit = math.round(Defense/parseInt(Vit);
+			    var SpAttVit = math.round(SpAttack/parseInt(Vit);
+			    var SpDefVit = math.round(SpDef/parseInt(Vit);
+			    var SpeeVit = math.round(Speed/parseInt(Vit);
+
+			    document.getElementById('HPVit').innerHTML = HPVit;
+			    document.getElementById('AttVit').innerHTML = AttVit;
+			    document.getElementById('DefVit').innerHTML = DefVit;
+			    document.getElementById('SpAttVit').innerHTML = SpAttVit;
+			    document.getElementById('SPDefVit').innerHTML = SpDefVit;
+			    document.getElementById('SpeeVit').innerHTML = SpeeVit;
+			}
+		</script>
 	</body>
 </html>
